@@ -269,6 +269,7 @@ window.onload = function () {
     if (step === 3) {
     }
     if (step === 4) {
+      document.getElementById('play').play();
       reveal();
       return;
     }
@@ -294,7 +295,8 @@ function reveal() {
   }
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "https://www.youtube.com/embed/KrKUDlUND5E?autoplay=1");
+  ifrm.setAttribute("src", "demo.mp4");
+  ifrm.setAttribute("allow", "autoplay");
   //ifrm.style.width = `${w}px`;
   //ifrm.style.height = `${h}px`;
   ifrm.style.border = 'none';
